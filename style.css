@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+p, h2, h3, button {
+    font-family: "Hanken Grotesk", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+  :root{
+
+
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    
+    /* ## Gradients */
+    
+    --Light-slate-blue-background: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+    
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+    
+    
+    
+    /* ### Neutral */
+    
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+    
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+    }
+
+    .main_con{
+        /* border: 3px solid red; */
+        max-width: 700px;
+        margin: 150px 0;
+        display: flex;
+        box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 35px;
+    }
+    /* =====media query for main_con from 0px to 500px */
+    @media(max-width:500px){
+        .main_con{
+            flex-direction: column;
+            margin: 0 0;
+            border-radius: 0;
+        }
+    }
+
+    .card_1{
+        /* border: 3px solid purple; */
+       max-width: 350px;
+        text-align: center;
+        padding: 20px;
+        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        border-radius: 35px;
+    }
+
+    /* =====media query for card_1 from 0px to 500px */
+    @media(max-width:500px){
+        .card_1{
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+    }
+    .Your{
+        font-size: 22px;
+        font-weight: 500;
+        margin-top: 15px;
+        color: var(--Pale-blue);
+    }
+
+    .circle{
+        /* border: 3px solid gold; */
+        width: 200px; 
+        height: 200px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+        justify-content: center;
+        margin: 30px auto;
+        background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    }
+    .seven_six{
+       font-size: 70px;
+       font-weight: 800;
+       color: var(--White);
+    }
+
+    .of_100{
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--Light-lavender);
+    }
+
+    .card_1 h2{
+        margin-bottom: 20px;
+        color: var(--White);
+    }
+    .you{
+        font-size: 18px;
+        padding: 0 20px;
+        margin-bottom: 20px;
+        color: var(--Pale-blue);
+    }
+
+    /* ==media query for .you from 0px to 500px */
+   @media(max-width:500px){
+    .you{
+        padding: 0 10px;
+    }
+   }
+     
+   
+    /* ========================== */
+     
+    .card_2{
+        /* border: 3px solid green; */
+        max-width: 350px;
+        padding: 30px;
+    }
+
+    @media (max-width: 500px){
+        .card_2{
+            padding: 100px;
+        }
+    }
+
+    .card_2 h3 {
+        color: var(--Dark-gray-blue);
+    }
+
+    .results{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    /* ================================= */
+    
+    .red{
+       display: flex; 
+       align-items:center ;
+       justify-content: space-between;
+       background-color:hsla(0, 100%, 67%, 0.1) ;
+       padding: 15px;
+       border-radius: 8px;
+       
+       }
+
+       .react{
+        display: flex;
+        gap: 10px;
+       }
+
+       .react p{
+        color: var(--Light-red);
+        font-size: 18px;
+        font-weight: 500;
+       }
+       /* ============================ */
+
+       .memo p{
+          color: hsla(224, 30%, 27%, 0.5) ;
+          font-weight: 500;
+          font-size: 18px;
+       }
+
+       .memo p span{
+        color: var(--Dark-gray-blue);
+       }
+
+       /* ================================= */
+
+
+       .yellow{
+        display: flex; 
+        align-items:center ;
+        justify-content: space-between;
+        background-color: hsla(39, 100%, 56%, 0.1);
+        padding: 15px;
+        border-radius: 8px;
+        
+        }
+ 
+        .memory{
+         display: flex;
+         gap: 10px;
+        }
+ 
+        .memory p{
+         color: var(--Orangey-yellow);
+         font-size: 18px;
+         font-weight: 500;
+        }
+        /* ================================== */
+
+        .green{
+            display: flex; 
+            align-items:center ;
+            justify-content: space-between;
+            background-color: hsla(166, 100%, 37%, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            
+            }
+     
+            .verbal{
+             display: flex;
+             gap: 10px;
+            }
+     
+            .verbal p{
+             color: var(--Green-teal);
+             font-size: 18px;
+             font-weight: 500;
+            }
+
+            /* ================================ */
+
+            .blue{
+                display: flex; 
+                align-items:center ;
+                justify-content: space-between;
+                background-color: hsla(234, 85%, 45%, 0.1);
+                padding: 15px;
+                border-radius: 8px;
+                
+                }
+         
+                .visual{
+                 display: flex;
+                 gap: 10px;
+                }
+         
+                .visual p{
+                 color: var(--Cobalt-blue);
+                 font-size: 18px;
+                 font-weight: 500;
+                }
+                /* ======================================= */
+
+                .but{
+                   display: flex; 
+                   justify-content: center;
+                   margin-top: 40px;
+                }
+                .but button{
+                    padding: 15px 100px;
+                    font-size: 18px;
+                    font-weight:500 ;
+                    border-radius: 40px;
+                    border: none;
+                    background-color: var(--Dark-gray-blue);
+                    color: var(--White);
+                    cursor: pointer;
+                }
+                .but button:hover{
+                    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%)); ;
+                }
+                
+                    @media(max-width:500px){
+                        .but button{
+                            padding: 15px 120px;
+                        }
+                    }
+                        
+    
+                
+                    
+            
+    
